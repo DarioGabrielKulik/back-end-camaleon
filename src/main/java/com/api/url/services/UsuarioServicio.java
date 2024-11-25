@@ -52,7 +52,7 @@ public class UsuarioServicio {
 
         String mensaje = "Gracias por registrarte!\n\n" +
                 "Para verificar tu cuenta, ingresa a:\n" +
-                "http://localhost:8080/verificacion/" + codigo + "\n\n" +
+                "https://camaleones.netlify.app/verificacion/" + codigo + "\n\n" +
                 "Si no creaste esta cuenta, puedes ignorar este mensaje.";
 
         enviarMail(usuario.getEmail(), "Verifica tu cuenta", mensaje);
@@ -135,7 +135,7 @@ public class UsuarioServicio {
         String mensaje = "Ya casi estas!\n\n" +
                 "Tu código de verificación es: " + codigo + "\n\n" +
                 "Para cambiar tu contraseña, ingresa a:\n" +
-                "http://localhost:4200/util/cambio-password" + "\n\n" +
+                "https://camaleones.netlify.app/util/cambio-password" + "\n\n" +
                 "Si no creaste esta cuenta, puedes ignorar este mensaje.";
 
         enviarMail(usuario.getEmail(), "Cambio de contraseña", mensaje);
