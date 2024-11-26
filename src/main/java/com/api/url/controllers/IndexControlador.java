@@ -48,9 +48,9 @@ public class IndexControlador {
     public RedirectView verify(@PathVariable String code) {
         try {
             usuarioServicio.verificarEmail(code);
-            return new RedirectView("http://localhost:4200/util/verificado");
+            return new RedirectView("https://camaleones.netlify.app/util/verificado");
         } catch (Exception e) {
-            return new RedirectView("http://localhost:4200/util/no-funciona");
+            return new RedirectView("https://camaleones.netlify.app/util/no-funciona");
         }
     }
 
