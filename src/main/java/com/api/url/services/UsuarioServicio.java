@@ -52,7 +52,7 @@ public class UsuarioServicio {
 
         String mensaje = "Gracias por registrarte!\n\n" +
                 "Para verificar tu cuenta, ingresa a:\n" +
-                "https://camaleones.netlify.app/verificacion/" + codigo + "\n\n" +
+                "https://camaleon.onrender.com/verificacion/" + codigo + "\n\n" +
                 "Si no creaste esta cuenta, puedes ignorar este mensaje.";
 
         enviarMail(usuario.getEmail(), "Verifica tu cuenta", mensaje);
